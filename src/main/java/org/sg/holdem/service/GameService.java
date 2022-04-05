@@ -1,7 +1,7 @@
-package com.sigma.service;
+package org.sg.holdem.service;
 
-import com.sigma.domain.Card;
-import com.sigma.entity.Game;
+import org.sg.holdem.domain.Card;
+import org.sg.holdem.entity.Game;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

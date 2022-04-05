@@ -1,7 +1,7 @@
-package com.sigma.domain;
+package org.sg.holdem.domain;
 
-import com.sigma.constants.Rank;
-import com.sigma.constants.Suit;
+import org.sg.holdem.constants.Rank;
+import org.sg.holdem.constants.Suit;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

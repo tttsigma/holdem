@@ -1,4 +1,4 @@
-package com.sigma;
+package org.sg.holdem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

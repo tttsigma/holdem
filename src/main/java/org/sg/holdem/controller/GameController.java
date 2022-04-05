@@ -1,8 +1,8 @@
-package com.sigma.controller;
+package org.sg.holdem.controller;
 
-import com.sigma.entity.Game;
-import com.sigma.service.CardService;
-import com.sigma.service.GameService;
+import org.sg.holdem.entity.Game;
+import org.sg.holdem.service.CardService;
+import org.sg.holdem.service.GameService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

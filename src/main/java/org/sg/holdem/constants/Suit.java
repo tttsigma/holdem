@@ -1,4 +1,4 @@
-package com.sigma.constants;
+package org.sg.holdem.constants;
 
 public enum Suit {
     DIAMOND("♦"),

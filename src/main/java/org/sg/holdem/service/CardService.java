@@ -1,8 +1,8 @@
-package com.sigma.service;
+package org.sg.holdem.service;
 
-import com.sigma.constants.Rank;
-import com.sigma.constants.Suit;
-import com.sigma.domain.Card;
+import org.sg.holdem.constants.Rank;
+import org.sg.holdem.constants.Suit;
+import org.sg.holdem.domain.Card;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;

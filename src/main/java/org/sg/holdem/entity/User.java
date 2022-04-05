@@ -1,4 +1,4 @@
-package com.sigma.entity;
+package org.sg.holdem.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

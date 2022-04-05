@@ -1,6 +1,6 @@
-package com.sigma.entity;
+package org.sg.holdem.entity;
 
-import com.sigma.domain.Card;
+import org.sg.holdem.domain.Card;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

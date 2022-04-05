@@ -8,11 +8,13 @@
         <version>2.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.sigma</groupId>
+
+    <groupId>org.sg</groupId>
     <artifactId>holdem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>holdem</name>
     <description>Demo project for Spring Boot</description>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
