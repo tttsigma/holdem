@@ -16,6 +16,11 @@ import java.util.Map;
 public class Game {
     String id;
     int playerNum;
-    List<Map<String, List<Card>>> players;
+    Map<String, List<Card>> players;
     List<Card> cards;
+
+    @Override
+    public String toString() {
+        return "[id:" + this.id + ", players:" + this.players + "]";
+    }
 }

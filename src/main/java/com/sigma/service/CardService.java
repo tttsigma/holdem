@@ -7,10 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -38,7 +35,7 @@ public class CardService {
         return cards;
     }
 
-    public Card deal(List<Card> cards) {
+    private Card deal(List<Card> cards) {
         if (!CollectionUtils.isEmpty(cards)) {
             int size = cards.size() - 1;
             int index = this.random.nextInt(size);
@@ -49,7 +46,14 @@ public class CardService {
             cards.remove(index);
             return card;
         } else {
+            CardService.log.error("there is no card!");
             return new Card();
         }
+    }
+
+    public List<Card> deal(List<Card> cards, Map<String, List<Card>> players) {
+        players.forEach((userId, handCard) -> handCard.add(this.deal(cards)));
+
+        return cards;
     }
 }
