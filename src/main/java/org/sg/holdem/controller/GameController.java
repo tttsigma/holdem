@@ -22,11 +22,15 @@ public class GameController {
 
     @GetMapping("/holdem/test")
     public Game start() {
+        // todo save in db
         List<String> userIdList = Arrays.asList("yxf", "me", "xhy", "lxy");
         Game game = this.gameService.initGame(userIdList);
         this.cardService.deal(game.getCards(), game.getPlayers());
 
         return game;
     }
+
+    // todo add new field desk in Game
+    // todo add new endpoint to deal / update card
 
 }
