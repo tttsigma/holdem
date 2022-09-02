@@ -14,10 +14,10 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Game {
-    String id;
-    int playerNum;
-    Map<String, List<Card>> players;
-    List<Card> cards;
+    private String id;
+    private Integer playerNum;
+    private Map<String, List<Card>> players;
+    private List<Card> cards;
 
     @Override
     public String toString() {
