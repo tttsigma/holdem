@@ -46,7 +46,7 @@ public class CardService {
             cards.remove(index);
             return card;
         } else {
-            CardService.log.error("there is no card!");
+            CardService.log.error("there is no card to deal!");
             return new Card();
         }
     }
