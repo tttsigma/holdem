@@ -1,6 +1,7 @@
 package org.sg.holdem.controller;
 
 import org.sg.holdem.entity.Game;
+import org.sg.holdem.repository.GameRepository;
 import org.sg.holdem.service.CardService;
 import org.sg.holdem.service.GameService;
 import lombok.extern.slf4j.Slf4j;
@@ -20,12 +21,16 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
+    @Autowired
+    private GameRepository gameRepository;
+
     @GetMapping("/holdem/test")
     public Game start() {
-        // todo save in db
         List<String> userIdList = Arrays.asList("yxf", "me", "xhy", "lxy");
         Game game = this.gameService.initGame(userIdList);
+
         this.cardService.deal(game.getCards(), game.getPlayers());
+        this.gameRepository.save(game);
 
         return game;
     }
