@@ -24,7 +24,7 @@ public class GameController {
     @Autowired
     private GameRepository gameRepository;
 
-    @GetMapping("/holdem/test")
+    @GetMapping("/holdem/start")
     public Game start() {
         List<String> userIdList = Arrays.asList("yxf", "me", "xhy", "lxy");
         Game game = this.gameService.initGame(userIdList);
@@ -33,6 +33,11 @@ public class GameController {
         this.gameRepository.save(game);
 
         return game;
+    }
+
+    @GetMapping("/holdem/games")
+    public List<Game> retrieveGame() {
+        return this.gameRepository.findAll();
     }
 
     // todo add new field desk in Game
