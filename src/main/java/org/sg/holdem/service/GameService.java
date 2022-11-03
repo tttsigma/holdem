@@ -24,6 +24,7 @@ public class GameService {
 
         return Game.builder()
                 .id(gameId)
+                .createdDate(new Date())
                 .cards(this.cardService.initCards())
                 .playerNum(userIdList.size())
                 .players(players)

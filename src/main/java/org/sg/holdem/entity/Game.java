@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -17,6 +18,8 @@ import java.util.Map;
 @Document("game")
 public class Game {
     private String id;
+    private Date createdDate;
+
     private Integer playerNum;
     private Map<String, List<Card>> players;
     private List<Card> cards;
